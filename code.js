@@ -14,8 +14,8 @@ function firstviz() {
     var containerDiv = document.getElementById("vizContainer"),
         // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
         // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Bar",
-        // url = "https://public.tableau.com/views/ProfitSalesPerStateinUSA_/CountryOverview"
-        url = "https://public.tableau.com/shared/RHG755SPZ?:display_count=y&:origin=viz_share_link"
+         url = "https://public.tableau.com/views/ProfitSalesPerStateinUSA_/CountryOverview"
+        // url = "https://public.tableau.com/shared/RHG755SPZ?:display_count=y&:origin=viz_share_link"
         options = {
             hideTabs: true,
             onFirstInteractive: function ()
