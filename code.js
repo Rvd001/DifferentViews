@@ -3,8 +3,14 @@
 var viz;
 var workbook;
 var activeSheet;
+var username;
 
-function initViz() {
+
+username = prompt("Username")
+
+
+
+function firstviz() {
     var containerDiv = document.getElementById("vizContainer"),
         // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
         // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Bar",
@@ -34,6 +40,41 @@ function vizResize() {
 
     viz.setFrameSize(parseInt(width, 10), parseInt(height, 10));
 }
+
+
+
+
+function secondviz() {
+    var containerDiv = document.getElementById("vizContainer"),
+        // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
+        // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Bar",
+        // url = "https://public.tableau.com/views/ProfitSalesPerStateinUSA_/CountryOverview"
+        url = "https://public.tableau.com/shared/RHG755SPZ?:display_count=y&:origin=viz_share_link"
+        options = {
+            hideTabs: true,
+            onFirstInteractive: function ()
+
+                {
+                    workbook = viz.getWorkbook();
+                    activeSheet = workbook.getActiveSheet();
+                    console.log("options is working");
+
+                }
+
+        };
+
+    viz = new tableau.Viz(containerDiv, url, options);
+}
+
+function user(){
+    if (username == 'Kehinde'){
+        return firstviz()
+    }else{
+        return secondviz()
+    }
+}
+
+
 
 
 //Original Size
