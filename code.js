@@ -8,6 +8,7 @@ function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
         // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
         url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Bar",
+        url = "https://public.tableau.com/views/ProfitSalesPerStateinUSA_/CountryOverview"
         options = {
             hideTabs: true,
             onFirstInteractive: function ()
