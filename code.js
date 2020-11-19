@@ -5,9 +5,11 @@ var workbook;
 var activeSheet;
 var username;
 
-
+// Authentication
 username = prompt("Username");
 
+
+// First Visualization
 function firstviz() {
     var containerDiv = document.getElementById("vizContainer"),
          url = "https://public.tableau.com/views/ProfitSalesPerStateinUSA_/CountryOverview"
