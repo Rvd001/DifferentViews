@@ -53,7 +53,8 @@ function secondviz() {
 function user(){
     if (username == 'Kehinde'){
         return firstviz()
-    }else{
+    }else if (username == 'Kayode') {
         return secondviz()
-    }
+    }else 
+    return null
 }
